@@ -1,0 +1,58 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>fujian.benz</groupId>
+  <artifactId>fujian-benz-common</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+      
+      <properties>  
+        <joda-time.version>2.5</joda-time.version>
+		<commons-lang3.version>3.3.2</commons-lang3.version>
+		<commons-io.version>1.3.2</commons-io.version>
+		<commons-fileupload.version>1.3.1</commons-fileupload.version>
+      </properties>
+  
+   <dependencies>
+   <dependency>
+      
+       <!-- 国产时间jar包 -->
+			<groupId>joda-time</groupId>
+			<artifactId>joda-time</artifactId>
+		    <version>${joda-time.version}</version>
+		    </dependency>
+   
+   <!-- Apache工具组件 -->
+			<dependency>
+				<groupId>org.apache.commons</groupId>
+				<artifactId>commons-lang3</artifactId>
+				<version>${commons-lang3.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.commons</groupId>
+				<artifactId>commons-io</artifactId>
+				<version>${commons-io.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>commons-fileupload</groupId>
+				<artifactId>commons-fileupload</artifactId>
+				<version>${commons-fileupload.version}</version>
+			</dependency>
+   </dependencies>
+
+
+
+<build>  
+    <plugins>  
+      <plugin>  
+        <groupId>org.apache.maven.plugins</groupId>  
+        <artifactId>maven-compiler-plugin</artifactId>  
+        <configuration>  
+          <source>1.8</source>  
+          <target>1.8</target>  
+        </configuration>  
+      </plugin>  
+    </plugins>  
+</build>  
+
+
+
+</project>
